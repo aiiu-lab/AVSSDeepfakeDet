@@ -1,9 +1,8 @@
 from pyexpat import features
 import torch
 import torch.nn.functional as F
-from torch import nn, einsum
+from torch import nn
 from einops import rearrange, repeat
-from models.model_utils.reverse_layer import ReverseLayerF
 
 
 class PreNorm(nn.Module):
